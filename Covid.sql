@@ -70,9 +70,6 @@ Group by continent
 order by TotalDeathCount desc
 
 
-
--- GLOBAL NUMBERS
-
 Select SUM(new_cases) as total_cases, SUM(cast(new_deaths as int)) as total_deaths, SUM(cast(new_deaths as int))/SUM(New_Cases)*100 as DeathPercentage
 From PortfolioProject..CovidDeaths
 --Where location like '%states%'
